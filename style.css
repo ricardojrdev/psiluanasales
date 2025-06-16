@@ -3,13 +3,22 @@
 =================================== */
 body {
   font-family: 'Satoshi', sans-serif;
+  padding-top: 80px; 
+
 }
 
 /* ================================
    HEADER / MENU DE NAVEGAÇÃO
 =================================== */
-.header-padrao {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header-padrao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+
 }
 
 .header-container {
@@ -21,14 +30,17 @@ body {
 }
 
 .menu-navegacao a {
+  color: black; /* cor padrão preta */
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, font-size 0.3s;
   margin-left: 15px;
+  font-size: 1rem;
 }
 
 .menu-navegacao a:hover {
-  color: #61397E;
+  color: #61397E; /* roxo ao passar o mouse */
+  font-size: 1.1rem; /* aumenta levemente o tamanho da fonte */
 }
 
 /* ================================
@@ -43,12 +55,15 @@ body {
   padding: 40px 20px;
 }
 
+
 .imagem-sobre {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  flex: 1;
 }
+
 
 .box-sobre {
   background-color: white;
@@ -263,15 +278,42 @@ body {
   color: white;
 }
 
-/* ================================
-   CORES PERSONALIZADAS
-=================================== */
-.bg-roxo-principal {
-  background-color: #61397E !important;
+/* ============================================
+   Estilo personalizado para os botões do acordeão
+   da seção de Serviços (cores roxas elegantes)
+=============================================== */
+
+.acordeao-servicos .accordion-button {
+  color: white;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
 }
 
-.bg-roxo-claro {
-  background-color: #B067E4 !important;
+/* Botão aberto (ativo) */
+.acordeao-servicos .accordion-button:not(.collapsed) {
+  background-color: #4C2A68; /* Roxo escuro */
+}
+
+/* Primeiro botão (fechado) */
+.acordeao-servicos .accordion-item:nth-of-type(1) .accordion-button.collapsed {
+  background-color: #4C2A68;
+}
+
+/* Segundo botão (fechado) */
+.acordeao-servicos .accordion-item:nth-of-type(2) .accordion-button.collapsed {
+  background-color: #B067E4;
+}
+
+/* Terceiro botão (fechado) */
+.acordeao-servicos .accordion-item:nth-of-type(3) .accordion-button.collapsed {
+  background-color: #C275E4;
+}
+
+/* Ícone do botão (setinha) */
+.acordeao-servicos .accordion-button::after {
+  filter: brightness(0) invert(1); /* deixa a setinha branca */
 }
 
 /* ================================

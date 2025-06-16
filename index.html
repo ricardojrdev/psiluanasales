@@ -14,9 +14,9 @@
 <body>
   <!-- Header -->
   <header class="header-padrao">
-    <div class="container header-container">
+    <div class="container d-flex justify-content-between align-items-center py-2">
       <img src="img/logo.png" alt="Logo" height="60" />
-      <nav class="menu-navegacao">
+      <nav class="menu-navegacao d-flex align-items-center gap-3">
         <a href="#sobre" class="link-menu">Sobre</a>
         <a href="#servicos" class="link-menu">Serviços</a>
         <a href="#contato" class="link-menu">Contato</a>
@@ -29,87 +29,90 @@
 
   <!-- Sobre -->
   <section id="sobre" class="section-padrao sobre-section">
-    <img src="img/luana.png" class="imagem-sobre" />
-    <div class="box-sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou psicóloga clínica (CRP 11/18807), formada pela Universidade de Fortaleza (Unifor) e pós-graduada em Avaliação Psicológica pela PUC-PR.</p>
-      <p>Acredito que cada pessoa carrega uma história única, repleta de significados que influenciam suas emoções, escolhas e relações. Desde cedo, me fascinou a complexidade da mente humana: a forma como nossas narrativas silenciosas moldam quem somos, muitas vezes sem que percebamos.</p>
-      <p>Com o tempo, a prática clínica e os estudos aprofundaram em mim a certeza de que, por trás de cada sofrimento, há uma história que merece ser ouvida, acolhida e compreendida — e foi isso que me conquistou na psicologia.</p>
-      <p>A psicoterapia vai muito além de “ajudar a lidar com problemas”. É um processo profundo, revelador e, muitas vezes, libertador. Minha paixão por essa jornada de descoberta é o que me motiva a oferecer uma escuta ética, atenta, sem julgamentos e verdadeiramente comprometida com a sua transformação. Aqui, você não será apenas ouvido, mas acompanhado em sua busca por respostas — aquelas que só você pode encontrar e que, muitas vezes, já habitam dentro de si.</p>
-      <p>A avaliação psicológica também ocupa um lugar especial na minha prática. Desde o primeiro contato com essa área na graduação, me encantei com sua profundidade e potência — o que me levou a atuar como monitora da disciplina por dois anos. Nesse período, aprofundei conhecimentos teóricos e práticos que ampliaram ainda mais meu olhar sobre esse processo.</p>
-      <p>Mais do que uma busca por diagnósticos, a avaliação é um caminho cuidadoso de escuta, observação e análise, que nos permite acessar aspectos profundos do funcionamento psíquico. Em cada encontro, busco construir um olhar ético, sensível e responsável sobre quem está diante de mim — respeitando suas singularidades e contribuindo para decisões mais conscientes e embasadas.</p>
+    <div class="container d-flex flex-wrap align-items-center">
+      <img src="img/luana.png" class="imagem-sobre mb-3 mb-md-0" alt="Foto da Dra. Luana Sales" />
+      <div class="box-sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou psicóloga clínica (CRP 11/18807), formada pela Universidade de Fortaleza (Unifor) e pós-graduada em Avaliação Psicológica pela PUC-PR.</p>
+        <p>Acredito que cada pessoa carrega uma história única, repleta de significados que influenciam suas emoções, escolhas e relações. Desde cedo, me fascinou a complexidade da mente humana: a forma como nossas narrativas silenciosas moldam quem somos, muitas vezes sem que percebamos.</p>
+        <p>Com o tempo, a prática clínica e os estudos aprofundaram em mim a certeza de que, por trás de cada sofrimento, há uma história que merece ser ouvida, acolhida e compreendida — e foi isso que me conquistou na psicologia.</p>
+        <p>A psicoterapia vai muito além de “ajudar a lidar com problemas”. É um processo profundo, revelador e, muitas vezes, libertador. Minha paixão por essa jornada de descoberta é o que me motiva a oferecer uma escuta ética, atenta, sem julgamentos e verdadeiramente comprometida com a sua transformação.</p>
+        <p>A avaliação psicológica também ocupa um lugar especial na minha prática. Desde o primeiro contato com essa área na graduação, me encantei com sua profundidade e potência — o que me levou a atuar como monitora da disciplina por dois anos. Nesse período, aprofundei conhecimentos teóricos e práticos que ampliaram ainda mais meu olhar sobre esse processo.</p>
+        <p>Mais do que uma busca por diagnósticos, a avaliação é um caminho cuidadoso de escuta, observação e análise, que nos permite acessar aspectos profundos do funcionamento psíquico. Em cada encontro, busco construir um olhar ético, sensível e responsável sobre quem está diante de mim — respeitando suas singularidades e contribuindo para decisões mais conscientes e embasadas.</p>
+      </div>
     </div>
   </section>
 
   <!-- Serviços -->
   <section id="servicos" class="section-padrao servicos-section">
-    <h2 class="titulo-centralizado">Serviços</h2>
-    <div class="linha-servicos">
-      <div class="coluna-servico">
-        <div class="card-servico">
-          <div class="card-conteudo">
+    <div class="container">
+      <h2 class="titulo-centralizado">Serviços</h2>
+      <div class="row text-center linha-servicos g-4">
+        <div class="col-md-4">
+          <div class="card-servico p-3">
             <img src="img/psicoterapia individual.png" alt="Psicoterapia Individual" height="40" />
             <p>Psicoterapia Individual</p>
           </div>
         </div>
-      </div>
-      <div class="coluna-servico">
-        <div class="card-servico">
-          <div class="card-conteudo">
+        <div class="col-md-4">
+          <div class="card-servico p-3">
             <img src="img/avaliacao psicologica.png" alt="Avaliação Psicológica" height="40" />
             <p>Avaliação Psicológica</p>
           </div>
         </div>
-      </div>
-      <div class="coluna-servico">
-        <div class="card-servico">
-          <div class="card-conteudo">
+        <div class="col-md-4">
+          <div class="card-servico p-3">
             <img src="img/recurso concurseiro.png" alt="Recurso Concurseiro" height="40" />
             <p>Recurso para Concurseiros</p>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="acordeao-servicos">
-      <div class="acordeao-item">
-        <h2>
-          <button class="botao-acordeao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Sobre Psicoterapia Individual</button>
-        </h2>
-        <div id="collapseOne" class="conteudo-acordeao collapse">
-          <div>
-            <p>Para quem é: Adultos que desejam se conhecer melhor, enfrentar questões emocionais ou buscar mais equilíbrio no dia a dia.</p>
-            <p>Ajudar a lidar com sentimentos, padrões de comportamento e promover saúde mental e qualidade de vida.</p>
-            <p>Como funciona: Sessões semanais online ou presenciais, com uma escuta ética, acolhedora e focada em você.</p>
-            <p>Resultado esperado: Mais bem-estar, clareza emocional e ferramentas para enfrentar os desafios da vida.</p>
+      <div class="accordion acordeao-servicos mt-4" id="accordionServicos">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+  Sobre Psicoterapia Individual
+</button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+            <div class="accordion-body">
+              <p>Para quem é: Adultos que desejam se conhecer melhor, enfrentar questões emocionais ou buscar mais equilíbrio no dia a dia.</p>
+              <p>Como funciona: Sessões semanais online ou presenciais, com uma escuta ética, acolhedora e focada em você.</p>
+              <p>Resultado esperado: Mais bem-estar, clareza emocional e ferramentas para enfrentar os desafios da vida.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="acordeao-item">
-        <h2>
-          <button class="botao-acordeao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Sobre Avaliação Psicológica</button>
-        </h2>
-        <div id="collapseTwo" class="conteudo-acordeao collapse">
-          <div>
-            <p>Para quem é: Pessoas de todas as idades que desejam investigar a possibilidade de transtornos como TDAH, depressão, burnout ou TEA.</p>
-            <p>Objetivo: Confirmar ou descartar hipóteses diagnósticas de forma ética e responsável.</p>
-            <p>Como funciona: 4 encontros com aplicação de testes, entrevistas e devolutiva com laudo psicológico claro e objetivo.</p>
-            <p>Resultado esperado: Diagnóstico (se houver), compreensão profunda do seu funcionamento psicológico e orientações para o tratamento.</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Sobre Avaliação Psicológica
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+            <div class="accordion-body">
+              <p>Para quem é: Pessoas de todas as idades que desejam investigar a possibilidade de transtornos como TDAH, depressão, burnout ou TEA.</p>
+              <p>Objetivo: Confirmar ou descartar hipóteses diagnósticas de forma ética e responsável.</p>
+              <p>Como funciona: 4 encontros com aplicação de testes, entrevistas e devolutiva com laudo psicológico claro e objetivo.</p>
+              <p>Resultado esperado: Diagnóstico (se houver), compreensão profunda do seu funcionamento psicológico e orientações para o tratamento.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="acordeao-item">
-        <h2>
-          <button class="botao-acordeao collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Sobre Recurso para Concurseiros</button>
-        </h2>
-        <div id="collapseThree" class="conteudo-acordeao collapse">
-          <div>
-            <p>Para quem é: Candidatos reprovados na etapa psicotécnica de concursos públicos que desejam recorrer da decisão.</p>
-            <p>Objetivo: Elaborar um recurso técnico e fundamentado para contestar a reprovação injusta.</p>
-            <p>Como funciona: Análise do edital e do laudo do concurso + elaboração de parecer psicológico para o recurso administrativo.</p>
-            <p>Resultado esperado: Documento fundamentado que aumenta suas chances de reverter a decisão e seguir no concurso.</p>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Sobre Recurso para Concurseiros
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+            <div class="accordion-body">
+              <p>Para quem é: Candidatos reprovados na etapa psicotécnica de concursos públicos que desejam recorrer da decisão.</p>
+              <p>Objetivo: Elaborar um recurso técnico e fundamentado para contestar a reprovação injusta.</p>
+              <p>Como funciona: Análise do edital e do laudo do concurso + elaboração de parecer psicológico para o recurso administrativo.</p>
+              <p>Resultado esperado: Documento fundamentado que aumenta suas chances de reverter a decisão e seguir no concurso.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -118,28 +121,26 @@
 
   <!-- Depoimentos -->
   <section id="depoimentos" class="section-padrao depoimentos-section">
-    <div class="container">
+  <div class="container">
       <h2 class="titulo-centralizado">Depoimentos</h2>
-      <div class="imagem-depoimentos">
+      <div class="text-center mb-4">
         <img src="img/google review.png" alt="Google Reviews" height="120" />
       </div>
-      <div class="linha-depoimentos">
-        <div class="coluna-depoimento">
-          <div class="card-depoimento">
+      <div class="row g-4 linha-depoimentos">
+        <div class="col-md-4">
+          <div class="card-depoimento p-3">
             <p class="texto-depoimento">"A Dra. Luana é uma profissional incrível. Sempre muito atenciosa e acolhedora. A psicoterapia com ela transformou minha vida!"</p>
             <p class="autor-depoimento">— Ana C.</p>
           </div>
         </div>
-
-        <div class="coluna-depoimento">
-          <div class="card-depoimento">
+        <div class="col-md-4">
+          <div class="card-depoimento p-3">
             <p class="texto-depoimento">"Fiz avaliação psicológica com ela e me senti respeitado em cada etapa. Muito profissionalismo e empatia."</p>
             <p class="autor-depoimento">— João M.</p>
           </div>
         </div>
-
-        <div class="coluna-depoimento">
-          <div class="card-depoimento">
+        <div class="col-md-4">
+          <div class="card-depoimento p-3">
             <p class="texto-depoimento">"O espaço é acolhedor e o atendimento me faz sentir compreendida de verdade. Recomendo de olhos fechados."</p>
             <p class="autor-depoimento">— Camila S.</p>
           </div>
@@ -152,14 +153,14 @@
   <section id="contato" class="section-padrao contato-section">
     <div class="container">
       <h2 class="titulo-centralizado">Contato</h2>
-      <div class="linha-contato">
-        <div class="coluna-contato-info">
+      <div class="row linha-contato g-4">
+        <div class="col-md-6 coluna-contato-info">
           <p><strong>Telefone:</strong><br />(85) 99614-1080</p>
           <p><strong>Email:</strong><br />clinicametaforicamente@gmail.com<br />luana.sales111@gmail.com</p>
           <p><strong>Endereço:</strong><br />Av. Washington Soares, 855<br />Salas 802 e 804</p>
           <p><i class="fab fa-instagram"></i> @psi.luanasales</p>
         </div>
-        <div class="coluna-contato-mapa">
+        <div class="col-md-6 coluna-contato-mapa">
           <iframe src="https://www.google.com/maps?q=Av.+Washington+Soares,+855&output=embed" width="100%" height="320" style="border: 0; border-radius: 10px" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
@@ -167,10 +168,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer-padrao">
+  <footer class="footer-padrao text-center py-3 mt-4">
     &copy; 2025 Todos os direitos reservados. | CRP: 11/8807 - Dra. Luana Sales
   </footer>
 
+  <!-- Botão WhatsApp Flutuante -->
   <a href="https://wa.me/5585996141080" target="_blank" class="botao-whatsapp-flutuante">
     <i class="fab fa-whatsapp"></i>
   </a>
