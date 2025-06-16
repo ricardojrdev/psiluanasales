@@ -1,0 +1,283 @@
+/* ================================
+   TIPOGRAFIA / FONTE PRINCIPAL
+=================================== */
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* ================================
+   HEADER / MENU DE NAVEGAÇÃO
+=================================== */
+.header-padrao {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-navegacao a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin-left: 15px;
+}
+
+.menu-navegacao a:hover {
+  color: #61397E;
+}
+
+/* ================================
+   SEÇÃO SOBRE MIM
+=================================== */
+.sobre-section {
+  color: rgb(0, 0, 0);
+  background-color: #61397E;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.imagem-sobre {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.box-sobre {
+  background-color: white;
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+}
+
+/* ================================
+   SEÇÃO SERVIÇOS
+=================================== */
+.servicos-section {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.titulo-centralizado {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.linha-servicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.coluna-servico {
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+
+.card-servico {
+  color: #ffffff;
+  background-color: #B067E4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.card-conteudo img {
+  margin-bottom: 10px;
+}
+
+.card-conteudo p {
+  font-weight: bold;
+}
+
+/* ================================
+   ACORDEÃO DE SERVIÇOS
+=================================== */
+.acordeao-servicos .acordeao-item {
+  margin-bottom: 10px;
+}
+
+.botao-acordeao {
+  background-color: #61397E;
+  color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.botao-acordeao.collapsed {
+  background-color: #B067E4;
+}
+
+.conteudo-acordeao {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* ================================
+   SEÇÃO DEPOIMENTOS
+=================================== */
+.depoimentos-section {
+  background-color: #61397E;
+  color: white;
+  padding: 40px 20px;
+}
+
+.imagem-depoimentos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linha-depoimentos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.coluna-depoimento {
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-bottom: 20px;
+}
+
+.card-depoimento {
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.texto-depoimento {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.autor-depoimento {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ================================
+   SEÇÃO CONTATO
+=================================== */
+.contato-section {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.linha-contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.coluna-contato-info {
+  color: white;
+  background-color: #61397E;
+  border-radius: 10px;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.coluna-contato-mapa {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.coluna-contato-info p {
+  margin-bottom: 10px;
+}
+
+.coluna-contato-info i {
+  margin-right: 5px;
+  color: #61397E;
+}
+
+/* ================================
+   BOTÃO WHATSAPP GERAL
+=================================== */
+.btn-whatsapp {
+  background-color: #32D951;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-whatsapp:hover {
+  background-color: #28b745;
+  color: white;
+}
+
+/* ================================
+   BOTÃO WHATSAPP FLUTUANTE
+=================================== */
+.botao-whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #32D951;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.botao-whatsapp-flutuante:hover {
+  background-color: #28b745;
+  color: white;
+}
+
+/* ================================
+   CORES PERSONALIZADAS
+=================================== */
+.bg-roxo-principal {
+  background-color: #61397E !important;
+}
+
+.bg-roxo-claro {
+  background-color: #B067E4 !important;
+}
+
+/* ================================
+   ESPAÇAMENTO ENTRE SEÇÕES
+=================================== */
+.section-padrao {
+  margin-bottom: 40px;
+}
+
